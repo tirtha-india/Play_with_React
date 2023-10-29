@@ -4,8 +4,9 @@ import ReactDrag from "./components/reactDrag";
 function App() {
   return (
     <div>
-      <Counter/>
-      <SmallTodo/>
+      {/* <Counter/>
+      <SmallTodo/> */}
+      <ReactDrag/>
       <ReactDrag/>
     </div>
   );
