@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 
-export default function ReactDrag() {
-    const [pos, setPos] = useState({x:0, y:0});
+export default function ReactDrag({cx, cy}) {
+    const [pos, setPos] = useState({x:cx, y:cy});
 
     return (
-        <div>
+        <div style={{height: "l00%", width: "100%"}}>
             <div
                 draggable
                 onDragEnd={(e)=>{
                     setPos({x:e.clientX, y:e.clientY})
+                    console.log(pos.x , pos.y);
                 }}
                 style={{
                     position: "absolute",

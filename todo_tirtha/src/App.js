@@ -6,8 +6,8 @@ function App() {
     <div>
       {/* <Counter/>
       <SmallTodo/> */}
-      <ReactDrag/>
-      <ReactDrag/>
+      <ReactDrag cx={0} cy={0}/>
+      <ReactDrag cx={500} cy={500}/>
     </div>
   );
 }
